@@ -1,1 +1,25 @@
-<p>navbar works!</p>
+<nav class="navbar">
+    <div class="navbar-cont">
+        <div class="navbar-logo">
+            <img src="{{logo}}" alt="PhotoSnap" (click)="goToHome()">
+
+        </div>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a [routerLink]="['protfolio']" class="nav-links">Protfolio</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['about']" class="nav-links">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a [routerLink]="['']" class="nav-links">Contact
+                </a>
+            </li>
+          
+        </ul>
+        
+    </div>
+</nav>
