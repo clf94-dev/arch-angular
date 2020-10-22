@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-
+welcomeD="../../../assets/images/home/desktop/image-welcome.jpg"
   constructor() { }
 
   ngOnInit(): void {
