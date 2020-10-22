@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  logo='../../../assets/images/shared/desktop/logo.svg';
+  logo='../../../assets/images/logo.svg';
   constructor(private _route: ActivatedRoute, private _router: Router){ }
 
   ngOnInit(): void {
