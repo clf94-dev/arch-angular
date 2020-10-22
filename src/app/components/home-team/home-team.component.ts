@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-team.component.scss']
 })
 export class HomeTeamComponent implements OnInit {
-
+teamD="../../../assets/images/home/desktop/image-small-team.jpg"
+arrow="../../../assets/images/icons/icon-arrow.svg"
   constructor() { }
 
   ngOnInit(): void {
