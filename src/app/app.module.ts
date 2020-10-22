@@ -21,6 +21,10 @@ import { TopAboutComponent } from './components/top-about/top-about.component';
 import { TopAboutContactCardComponent } from './components/top-about-contact-card/top-about-contact-card.component';
 import { TopContactComponent } from './components/top-contact/top-contact.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     TopAboutComponent,
     TopAboutContactCardComponent,
     TopContactComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    HomeComponent,
+    PortfolioComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule
