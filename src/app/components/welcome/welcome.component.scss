@@ -1,0 +1,64 @@
+$black: #000000;
+$dark-grey: #707070;
+$medium-grey: #7D828F;
+$light-grey: #C8CCD8;
+$very-light-grey: #EEEFF4;
+$red: #DF5656;
+
+
+//-----------------------Welcome Section----------------------
+.welcome-cont {
+    padding: 5% 7%;
+    .text-col {
+
+        @media screen and (min-width:800px){
+            width:58%;
+        }
+        width: 100% ;
+        h1 {
+            position: absolute;
+            display: block;
+            left: 10vw;
+            font-weight: 500;
+            letter-spacing: -0.8rem;
+            font-size: 180px;
+            z-index: -1 !important;
+            color: $very-light-grey;
+            @media screen and (max-width: 756px) {
+                display: none;
+            }
+            @media screen and (max-width: 1080px) {
+                padding-top: 2%;
+                font-size: 120px;
+            }
+        }
+        h3 {
+            @media screen and (min-width: 1080px) {
+                padding: 140px 3% 2% 32%;
+            }
+            padding: 25% 7% 2% 6%;
+            letter-spacing: -0.3rem;
+            z-index: 2 !important;
+            font-size: 56px;
+            font-weight: 300;
+        }
+        p {
+            @media screen and (min-width: 1080px) {
+                padding: 1% 2% 2% 32%;
+            }
+            padding: 1% 7% 2% 6%;
+            font-size: 15px;
+        }
+    }
+    .img-col {
+        @media screen and (min-width:800px){
+            width:42%;
+        }
+        width: 100% ;
+        text-align: center;
+        display: block;
+        @media screen and (max-width: 1080px) {
+            display: none;
+        }
+    }
+}

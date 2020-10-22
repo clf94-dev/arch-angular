@@ -26,6 +26,7 @@ import { PortfolioComponent } from './components/pages/portfolio/portfolio.compo
 import { AboutComponent } from './components/pages/about/about.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
 import { appRoutingProviders, routing } from './app.routing';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -52,11 +53,13 @@ import { appRoutingProviders, routing } from './app.routing';
     HomeComponent,
     PortfolioComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FlexLayoutModule
   ],
   providers: [appRoutingProviders],
   bootstrap: [AppComponent]
