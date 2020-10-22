@@ -25,6 +25,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { PortfolioComponent } from './components/pages/portfolio/portfolio.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { appRoutingProviders, routing } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -54,9 +55,10 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     ContactComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
-  providers: [],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
