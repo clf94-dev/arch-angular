@@ -1,0 +1,66 @@
+$black: #000000;
+$dark-grey: #707070;
+$medium-grey: #7D828F;
+$light-grey: #C8CCD8;
+$very-light-grey: #EEEFF4;
+$red: #DF5656;
+$font: 'Spartan',
+sans-serif;
+//-------------------------Footer Section ----------------------
+.footer-cont {
+    padding: 3% 7% 0 7%;
+    text-align: center;
+    align-items: center;
+    text-decoration: none !important;
+    .logo-cont {
+        background-color: black;
+        padding: 5% 0;
+        @media screen and (min-width:800px){
+            width: 16%;
+        }
+        width: 100%;
+    }
+    .links-col {
+        background-color: $very-light-grey;
+        padding: 5% 3%;
+        @media screen and (min-width:800px){
+            width: 16%;
+        }
+        width: 100%;
+        a {
+            font-size: 14px;
+            color: $dark-grey;
+            cursor: pointer;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+    .btn-col {
+        background-color: $very-light-grey;
+        padding: 3.8% 0;
+        @media screen and (min-width:800px){
+            width: 36%;
+        }
+        width: 100%;
+        button {
+            width: 250px;
+            height: 60px;
+            background-color: $black;
+            color: white;
+            cursor: pointer;
+            align-items: center !important;
+            border: 1px solid black;
+            img {
+                padding-top: 5px;
+                padding-left: 20px;
+                height: 20px;
+            }
+            &:hover {
+                background-color: $dark-grey;
+                color: white;
+                border-color: $dark-grey;
+            }
+        }
+    }
+}
