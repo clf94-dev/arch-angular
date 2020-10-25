@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-middle.component.scss']
 })
 export class AboutMiddleComponent implements OnInit {
-
+middleD="../../../assets/images/about/desktop/image-heritage.jpg"
   constructor() { }
 
   ngOnInit(): void {
