@@ -1,0 +1,39 @@
+
+//---------------Middle section About page ------------------
+.middle-cont {
+    padding: 5% 7% 5% 10%;
+    @media screen and (max-width: 1081px) {
+        padding: 4% 7% 4% 10%;
+    }
+    .text-col {
+        padding-top: 7%;
+        padding-right: 15%;
+        @media screen and (min-width:800px){
+            width:50%;
+        }
+        width: 100%;
+        h3 {
+            font-size: 56px;
+            font-weight: 300;
+            letter-spacing: -0.2rem;
+            padding-bottom: 10px;
+            padding-right: 50%;
+        }
+        p {
+            font-size: 16px;
+            padding-top: 20px;
+        }
+    }
+    .img-col {
+        @media screen and (min-width:800px){
+            width:50%;
+        }
+        width: 100%;
+        padding-left: 3.5%;
+        overflow-x: hidden;
+        display: block;
+        @media screen and (max-width: 757px) {
+            display: none;
+        }
+    }
+}
