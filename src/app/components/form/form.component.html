@@ -15,10 +15,16 @@
     fxFlex.md="50%"
     fxFlex.lg="50%"
   >
-  {{user.name}}
+  <!---{{user.name}}--->
     <form #userForm="ngForm" (ngSubmit)="onSubmit()">
-      <input placeholder="Name" type="text" name="name" #name="ngModel" [(ngModel)]="user.name" />
-      <input placeholder="Email address" type="email" name="email" #email="ngModel" [(ngModel)]="user.email"/>
+      <input required pattern="[a-zA-Z]+" placeholder="Name" [ngStyle]="{borderBottomColor: !name.valid && name.touched? 'red': 'black'}" type="text" name="name" #name="ngModel" [(ngModel)]="user.name" />
+      <small *ngIf="!name.valid && name.touched" style="color: 'red'">
+        Name not valid
+      </small>
+      <input placeholder="Email address" [ngStyle]="{borderBottomColor: !email.valid && email.touched? 'red': 'black'}" type="email" name="email" #email="ngModel" [(ngModel)]="user.email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+      <small *ngIf="!email.valid && email.touched" style="color: 'red'">
+        Email address not valid
+      </small>
       <textarea
         placeholder="Your message..."
         name="message"
@@ -26,7 +32,12 @@
         cols="30"
         rows="10"
         #message="ngModel" [(ngModel)]="user.message"
+        required
+        
       ></textarea>
+      <small *ngIf="!message.valid && message.touched" style="color: 'red'">
+        Message can't be empty
+      </small>
 
       <button type="submit" class="submit-btn">Send Message</button>
     
