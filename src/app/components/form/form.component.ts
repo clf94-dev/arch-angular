@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent implements OnInit {
-
-  constructor() { }
+public user:any;
+  constructor() {
+    this.user={
+      name: "",
+      email: "",
+      message: ""
+    }
+   }
 
   ngOnInit(): void {
   }
