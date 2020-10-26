@@ -1,1 +1,10 @@
-<p>contact-details works!</p>
+<div class="contact-details-cont" fxLayout="row wrap">
+<div class="title-col" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%">
+    <h3>Contact Details</h3>
+</div>
+<div class="info-cont" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%">
+<div *ngFor="let data of contactinfo; let i=index">
+    <app-contact-info-card [office]="data.office" [mail]="data.mail" [address]="data.address" [phone]="data.phone" ></app-contact-info-card>
+</div>
+</div>
+</div>
