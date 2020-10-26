@@ -15,17 +15,23 @@
     fxFlex.md="50%"
     fxFlex.lg="50%"
   >
-    <form>
-      <input placeholder="Name" type="text" name="name" />
-      <input placeholder="Email address" type="email" name="email" />
+  {{user.name}}
+    <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+      <input placeholder="Name" type="text" name="name" #name="ngModel" [(ngModel)]="user.name" />
+      <input placeholder="Email address" type="email" name="email" #email="ngModel" [(ngModel)]="user.email"/>
       <textarea
         placeholder="Your message..."
         name="message"
         id=""
         cols="30"
         rows="10"
+        #message="ngModel" [(ngModel)]="user.message"
       ></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    
     </form>
-    <button type="submit" class="submit-btn">Send Message</button>
+    
+ 
   </div>
 </div>

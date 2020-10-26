@@ -18,4 +18,8 @@ public user:any;
   ngOnInit(): void {
   }
 
+  onSubmit(){
+    
+    console.log(this.user)
+  }
 }

@@ -28,6 +28,8 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { appRoutingProviders, routing } from './app.routing';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {FormsModule} from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
