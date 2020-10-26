@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./map-img.component.scss']
 })
 export class MapImgComponent implements OnInit {
-
+mapImgD="../../../assets/images/contact/desktop/image-map.png"
   constructor() { }
 
   ngOnInit(): void {
