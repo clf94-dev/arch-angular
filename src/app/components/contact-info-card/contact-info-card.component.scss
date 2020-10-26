@@ -1,0 +1,9 @@
+.info-card {
+    padding-bottom: 25px;
+    p {
+        margin-bottom: 10px;
+        &:first-child {
+            font-weight: 500;
+        }
+    }
+}
