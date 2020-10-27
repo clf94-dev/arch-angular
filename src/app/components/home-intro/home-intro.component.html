@@ -10,16 +10,16 @@
 
 </div>
 <div class="btn-row" fxLayout="row wrap">
-    <div class="btn" (click)="goToPage1()">
+    <div class="btn" (click)="goToPage1()" [ngStyle]="{backgroundColor: page===0?  'black':'white', color: page===0?'white':'black'}">
         <h3>01</h3>
     </div>
-    <div class="btn" (click)="goToPage2()">
+    <div class="btn" (click)="goToPage2()" [ngStyle]="{backgroundColor: page===1?  'black':'white', color: page===1?'white':'black'}">
         <h3>02</h3>
     </div>
-    <div class="btn" (click)="goToPage3()">
+    <div class="btn" (click)="goToPage3()" [ngStyle]="{backgroundColor: page===2?  'black':'white', color: page===2?'white':'black'}">
         <h3>03</h3>
     </div>
-    <div class="btn" (click)="goToPage4()">
+    <div class="btn" (click)="goToPage4()" [ngStyle]="{backgroundColor: page===3?  'black':'white', color: page===3?'white':'black'}">
         <h3>04</h3>
     </div>
 
