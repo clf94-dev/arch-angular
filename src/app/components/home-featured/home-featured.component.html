@@ -1,23 +1,41 @@
-<div class="featured-cont" >
-    <div class="feat-head-row" fxLayout="row wrap">
-      <div class="title-col" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%">
-        <h3>Featured</h3>
-      </div>
-      <div class="button-col" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="50%" fxFlex.lg="50%">
-          <button (click)="goToPortfolio()">See All</button>
-      </div>
+<div class="featured-cont">
+  <div class="feat-head-row" fxLayout="row wrap">
+    <div
+      class="title-col"
+      fxFlex.xs="100%"
+      fxFlex.sm="100%"
+      fxFlex.md="50%"
+      fxFlex.lg="50%"
+    >
+      <h3>Featured</h3>
     </div>
-    <div class="feat-proj-row" fxLayout="row wrap">
-        <div *ngFor="let data of homefeatured; let i=index">
-            <div class="project-card-cont" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.lg="33%" >
-<img src="{{data.src}}" alt="{{data.imgAlt}}">
-<h1>{{i+1}}</h1>
-<div class="project-card-text">
-    <h3>{{data.title}</h3>
-    <p>{{data.text}}</p>
-    <button (click)="goToPortfolio()">View All Projects</button>
-</div>
-            </div>
+    <div
+      class="button-col"
+      fxFlex.xs="100%"
+      fxFlex.sm="100%"
+      fxFlex.md="50%"
+      fxFlex.lg="50%"
+    >
+      <button (click)="goToPortfolio()">See All</button>
+    </div>
+  </div>
+  <div class="feat-proj-row" fxLayout="row wrap">
+    <div *ngFor="let data of homefeatured; let i = index">
+      <div
+        class="project-card-cont"
+        fxFlex.xs="100%"
+        fxFlex.sm="100%"
+        fxFlex.md="100%"
+        fxFlex.lg="33%"
+      >
+        <img src="{{ data.src }}" alt="{{ data.imgAlt }}" />
+        <h1>{{ i + 1 }}</h1>
+        <div class="project-card-text">
+          <h3>{{data.title}}</h3>
+          <p>{{ data.text }}</p>
+          <button (click)="goToPortfolio()">View All Projects</button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
