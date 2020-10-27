@@ -18,15 +18,16 @@
     <div
       class="members-row"
       fxLayout="row wrap"
-      *ngFor="let data of membersdata; let i = index"
+      
     >
-      <div
+    <div *ngFor="let data of membersdata; let i = index"> <div
         class="member-card"
         fxFlex.xs="100%"
         fxFlex.sm="50%"
         fxFlex.md="50%"
         fxFlex.lg="50%"
       >
+      <div class="card-col">
         <img src="{{data.src}}" alt="{{data.imgAlt}}" />
         <h3>{{data.name}}</h3>
         <p>{{data.position}}</p>
@@ -34,7 +35,9 @@
             <i className='fab fa-2x fa-linkedin'></i>
             <i className='fab fa-2x fa-twitter'></i>
         </div>
-      </div>
+    </div>
+      </div></div>
+     
     </div>
   </div>
 </div>

@@ -38,7 +38,10 @@ sans-serif;
                 width: 50%;
             }
             width: 100%;
-            .card-col {
+           
+        .card-col  { 
+            width: 350px;
+            margin-right: 35px;
                 margin-bottom: 50px !important;
                 img {
                     width: 350px;
@@ -57,8 +60,8 @@ sans-serif;
                 i {
                     margin: 2% 4% 2% 1%;
                     cursor: pointer;
-                }
-            }
+                }}
+            
         }
     }
 }
