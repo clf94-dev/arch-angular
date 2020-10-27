@@ -1,0 +1,91 @@
+$black: #000000;
+$dark-grey: #707070;
+$medium-grey: #7D828F;
+$light-grey: #C8CCD8;
+$very-light-grey: #EEEFF4;
+$red: #DF5656;
+
+
+
+//----------------------Home Intro section ---------------------
+.intro-cont {
+    padding: 3% 7% 5% 10%;
+    .text-col {
+        width:100%;
+        position: absolute;
+        top: 28vw;
+        @media screen and (max-width: 757px) {
+            top: 10%;
+        }
+        left: 20%;
+        padding-right: 70% !important;
+        font-weight: normal;
+        color: $very-light-grey;
+        h1 {
+            @media screen and (max-width: 756px) {
+                font-size: 40px;
+                padding-top: 60% !important;
+            }
+            @media screen and (max-width: 1080px) {
+                padding-top: 65% !important;
+            }
+            font-size: 70px;
+        }
+        p {
+            @media screen and (max-width: 757px) {
+                font-size: 14px;
+            }
+            font-size: 15px;
+            padding-right: 20% !important;
+            padding-bottom: 40px;
+        }
+        button {
+            width: 250px;
+            height: 60px;
+            background-color: $black;
+            color: white;
+            cursor: pointer;
+            align-items: center !important;
+            border: 1px solid black;
+            img {
+                padding-top: 5px;
+                padding-left: 20px;
+                height: 20px;
+            }
+            &:hover {
+                background-color: $dark-grey;
+                color: white;
+                border-color: $dark-grey;
+            }
+        }
+    }
+   .img-col {
+       width:100%;
+       img {
+        width: 100%;
+    }}
+}
+
+.btn-row {
+    position: absolute;
+    @media screen and(max-width: 756px) {
+        top: 85% !important;
+    }
+    @media screen and(max-width: 1080px) {
+        top: 120%;
+    }
+    top: 59.66vw;
+    left: 137px;
+    .btn {
+        background-color: white;
+        border: 1px solid $dark-grey;
+        padding: 20px;
+        cursor: pointer;
+        h3 {
+            font-size: 12px;
+        }
+        &:hover {
+            background-color: $light-grey !important;
+        }
+    }
+}
