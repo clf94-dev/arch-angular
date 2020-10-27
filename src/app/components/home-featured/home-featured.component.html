@@ -31,9 +31,17 @@
         <img src="{{ data.src }}" alt="{{ data.imgAlt }}" />
         <h1>{{ i + 1 }}</h1>
         <div class="project-card-text">
-          <h3>{{data.title}}</h3>
+          <h3 [ngStyle]="{color: i===0? 'black': '#EEEFF4'}">{{data.title}}</h3>
           <p>{{ data.text }}</p>
-          <button (click)="goToPortfolio()">View All Projects</button>
+          <button (click)="goToPortfolio()" [ngStyle]="{
+            color: i === 0
+                ? 'black'
+                : '#EEEFF4',
+            borderColor: i === 0
+                ? 'black'
+                : '#EEEFF4'
+               
+        }">View All Projects</button>
         </div>
       </div>
     </div>
