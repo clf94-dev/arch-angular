@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home-featured',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeFeaturedComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _route: ActivatedRoute, private _router: Router) { }
 
   ngOnInit(): void {
   }
 
+  goToPortfolio() {
+    this._router.navigate(['/portfolio']);
+  }
+
+
+  
 }
