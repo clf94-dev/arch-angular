@@ -1,1 +1,21 @@
-<p>portfolio-section works!</p>
+<div class="feat-proj-row" fxLayout="row wrap">
+  <div *ngFor="let data of portfoliodata; let i = index">
+    <div
+      class="project-card-cont"
+      fxFlex.xs="100%"
+      fxFlex.sm="100%"
+      fxFlex.md="100%"
+      fxFlex.lg="33%"
+    >
+      <img src="{{ data.src }}" alt="{{ data.imgAlt }}" />
+      <h1>{{ i + 1 }}</h1>
+      <div class="project-card-text">
+        <h3 [ngStyle]="{ color: i === 0 ? 'black' : '#EEEFF4' }">
+          {{ data.title }}
+        </h3>
+        <p>{{ data.text }}</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
