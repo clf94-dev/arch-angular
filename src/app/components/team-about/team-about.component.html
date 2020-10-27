@@ -1,1 +1,40 @@
-<p>team-about works!</p>
+<div class="team-cont" fxLayout="row wrap">
+  <div
+    class="title-col"
+    fxFlex.xs="100%"
+    fxFlex.sm="100%"
+    fxFlex.md="50%"
+    fxFlex.lg="50%"
+  >
+    <h3>The Leaders</h3>
+  </div>
+  <div
+    class="members-col"
+    fxFlex.xs="100%"
+    fxFlex.sm="100%"
+    fxFlex.md="50%"
+    fxFlex.lg="50%"
+  >
+    <div
+      class="members-row"
+      fxLayout="row wrap"
+      *ngFor="let data of membersdata; let i = index"
+    >
+      <div
+        class="member-card"
+        fxFlex.xs="100%"
+        fxFlex.sm="50%"
+        fxFlex.md="50%"
+        fxFlex.lg="50%"
+      >
+        <img src="{{}}" alt="" />
+        <h3>{{ data.name }}</h3>
+        <p>{{ data.position }}</p>
+        <div class="social-row">
+            <i className='fab fa-2x fa-linkedin'></i>
+            <i className='fab fa-2x fa-twitter'></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
