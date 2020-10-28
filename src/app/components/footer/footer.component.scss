@@ -14,11 +14,17 @@ sans-serif;
     text-decoration: none !important;
     .logo-cont {
         background-color: black;
-        padding: 5% 0;
+        padding: 4.2% 0;
         @media screen and (min-width:800px){
             width: 16%;
         }
         width: 100%;
+        img{
+            &:hover{
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+        }
     }
     .links-col {
         background-color: $very-light-grey;

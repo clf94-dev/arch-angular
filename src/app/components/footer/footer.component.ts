@@ -12,6 +12,9 @@ logoW="../../../assets/images/logo copy.svg";
 
   ngOnInit(): void {
   }
+  goToHome(){
+    this._router.navigate(['/home']);
+  }
   goToAbout(){
     this._router.navigate(['/about']);
   }
