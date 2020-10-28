@@ -10,10 +10,10 @@
       <img src="{{ data.src }}" alt="{{ data.imgAlt }}" />
   
       <div class="project-card-text">
-        <h3 [ngStyle]="{ color: i === 0 ? 'black' : '#EEEFF4' }">
+        <h3 [ngStyle]="{ color: i === 0 || i===3||i===6? 'black' : '#EEEFF4' }">
           {{ data.title }}
         </h3>
-        <p>{{ data.text }}</p>
+        <p [ngStyle]="{ color: i === 0 || i===3||i===6? 'black' : '#EEEFF4' }">{{ data.text }}</p>
         
       </div>
     </div>
