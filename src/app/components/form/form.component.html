@@ -32,6 +32,7 @@
         cols="30"
         rows="10"
         #message="ngModel" [(ngModel)]="user.message"
+        [ngStyle]="{borderBottomColor: !message.valid && message.touched? 'red': 'black'}"
         required
         
       ></textarea>
