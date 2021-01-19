@@ -6,14 +6,11 @@ $very-light-grey: #EEEFF4;
 $red: #DF5656;
 $font: 'Spartan',
 sans-serif;
-
-
-
 //-----------------Team About section ------------------
 .team-cont {
     padding: 5% 7% 5% 10%;
     .title-col {
-        @media screen and (min-width:800px){
+        @media screen and (min-width: 800px) {
             width: 50%;
         }
         width: 100%;
@@ -29,19 +26,18 @@ sans-serif;
         @media screen and (min-width: 757px) {
             justify-content: space-evenly !important;
         }
-        @media screen and (min-width:800px){
-            width: 50%;
+        @media screen and (min-width:800px) {
+            width: 40%;
         }
         width: 100%;
         .member-card {
-            @media screen and (min-width:800px){
-                width: 50%;
+            @media screen and (min-width: 800px) {
+                width: 40%;
             }
             width: 100%;
-           
-        .card-col  { 
-            width: 350px;
-            margin-right: 35px;
+            .card-col {
+                width: 350px;
+                margin-right: 35px;
                 margin-bottom: 50px !important;
                 img {
                     width: 350px;
@@ -58,13 +54,11 @@ sans-serif;
                     width: 250px;
                     margin-bottom: 10px;
                 }
-
-              i {
-                
+                i {
                     cursor: pointer;
-                   color: $black;
-                }}
-            
+                    color: $black;
+                }
+            }
         }
     }
 }
