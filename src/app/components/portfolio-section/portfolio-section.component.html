@@ -1,21 +1,15 @@
 <div class="feat-proj-row" fxLayout="row wrap">
-  <div *ngFor="let data of portfoliodata; let i = index">
-    <div
-      class="project-card-cont"
-      fxFlex.xs="100%"
-      fxFlex.sm="100%"
-      fxFlex.md="100%"
-      fxFlex.lg="33%"
-    >
-      <img src="{{ data.src }}" alt="{{ data.imgAlt }}" />
-  
-      <div class="project-card-text">
-        <h3 [ngStyle]="{ color: i === 0 || i===3||i===6? 'black' : '#EEEFF4' }">
-          {{ data.title }}
-        </h3>
-        <p [ngStyle]="{ color: i === 0 || i===3||i===6? 'black' : '#EEEFF4' }">{{ data.text }}</p>
-        
-      </div>
+    <div *ngFor="let data of portfoliodata; let i = index">
+        <div class="project-card-cont" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.lg="100%">
+            <img src="{{ data.srcD }}" srcset="{{data.srcD}} 1000w, {{data.srcT}} 900w, {{data.srcM}} 600W" alt="{{ data.imgAlt }}" />
+
+            <div class="project-card-text">
+                <h3 [ngStyle]="{ color: i === 0 || i===3||i===6? 'black' : '#EEEFF4' }">
+                    {{ data.title }}
+                </h3>
+                <p [ngStyle]="{ color: i === 0 || i===3||i===6? 'black' : '#EEEFF4' }">{{ data.text }}</p>
+
+            </div>
+        </div>
     </div>
-  </div>
 </div>
