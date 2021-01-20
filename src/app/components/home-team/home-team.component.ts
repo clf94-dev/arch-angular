@@ -8,6 +8,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class HomeTeamComponent implements OnInit {
 teamD="../../../assets/images/home/desktop/image-small-team.jpg"
+teamT="../../../assets/images/home/tablet/image-small-team.jpg"
+teamM="../../../assets/images/home/mobile/image-small-team.jpg"
 arrow="../../../assets/images/icons/icon-arrow.svg"
   constructor(private _route: ActivatedRoute, private _router: Router) { }
 

@@ -1,7 +1,7 @@
 <div class="team-cont" fxLayout="column">
-  <img src="{{ teamD }}" alt="team" />
-  <div class="team-text" fxLayout="column">
-    <h3>Small team, big ideas</h3>
-    <button (click)="goToAbout()" >About Us <img src="{{ arrow }}" alt="arrow" /></button>
-  </div>
+    <img src="{{ teamD }}" srcset="{{teamD}} 1500w, {{teamT}} 900w, {{teamM}} 600w" alt="team" />
+    <div class="team-text" fxLayout="column">
+        <h3>Small team, big ideas</h3>
+        <button (click)="goToAbout()">About Us <img src="{{ arrow }}" alt="arrow" /></button>
+    </div>
 </div>
