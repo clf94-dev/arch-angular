@@ -4,26 +4,15 @@ $medium-grey: #7D828F;
 $light-grey: #C8CCD8;
 $very-light-grey: #EEEFF4;
 $red: #DF5656;
-
-
 //-----------------Featured Section ----------------
 .featured-cont {
     padding: 5% 7%;
     .feat-head-row {
         padding: 2% 0;
-        .title-col{
-            @media screen and (min-width:800px){
-                width: 50%;
-            }
-            width: 100%;
-            h3 {
+        h3 {
             font-size: 56px;
-        }}
+        }
         .button-col {
-              @media screen and (min-width:800px){
-                width: 50%;
-            }
-            width: 100%;
             text-align: end;
             button {
                 @media screen and (max-width: 757px) {
@@ -79,14 +68,15 @@ $red: #DF5656;
     }
     .feat-proj-row {
         .project-card-cont {
-            @media screen and (min-width:800px){
-                width: 530px;
-            }
-            width: 400px;
             @media screen and (min-width: 1080px) {
                 padding: 0 2%;
+                margin-right: 5%;
             }
-            padding: 2% 0;
+            @media screen and (min-width: 600px) {
+                width: 33%;
+            }
+            width: 100%;
+            padding: 2% 0%;
             overflow-x: hidden;
             img {
                 @media screen and (max-width: 1500px) {
@@ -100,13 +90,12 @@ $red: #DF5656;
                     width: 100%;
                     height: 600px;
                 }
-                z-index: -1;
             }
             h1 {
                 @media screen and (max-width: 1080px) {
                     position: absolute;
+                    top: 330%;
                     left: 70%;
-                    margin-top: -32%;
                     font-size: 150px;
                 }
                 @media screen and (max-width:756px) {
@@ -115,10 +104,10 @@ $red: #DF5656;
                     left: 30%;
                     padding-left: 17%;
                 }
-                @media screen and (min-width: 1080px) {
-                    padding-left: 17%;
+                @media screen and (min-width: 1500px) {
+                    padding-left: 12%;
                     position: absolute;
-                    top: 310%;
+                    top: 350%;
                     font-size: 200px;
                 }
                 font-family: sans-serif;
@@ -126,10 +115,10 @@ $red: #DF5656;
                 color: $very-light-grey;
             }
             .project-card-text {
-                @media screen and (min-width: 1080px) {
-                    position: absolute !important;
-                    top: 350% !important;
-                    padding-left: 30px !important;
+                @media screen and (min-width: 1500px) {
+                    position: absolute;
+                    top: 410%;
+                    padding-left: 20px !important;
                 }
                 @media screen and (max-width: 1080px) {
                     position: absolute;
@@ -161,15 +150,13 @@ $red: #DF5656;
                     }
                 }
                 h3 {
-                    z-index: 1;
                     font-size: 18px;
                     font-weight: 300;
                     color: $very-light-grey;
-                    padding-right: 60%;
+                    padding-right: 40%;
                     padding-bottom: 10px;
                 }
                 button {
-                    z-index: 1;
                     width: 250px;
                     height: 30px;
                     background-color: transparent;
