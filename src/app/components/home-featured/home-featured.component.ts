@@ -13,9 +13,9 @@ public homefeatured: HomeFeaturedData[];
 
   ngOnInit(): void {
     this.homefeatured=[
-      new HomeFeaturedData("Project Del Sol","","../../../assets/images/portfolio/desktop/image-del-sol.jpg","Project Del Sol"),
-      new HomeFeaturedData("228B Tower","","../../../assets/images/portfolio/desktop/image-228b.jpg","228B Tower"),
-      new HomeFeaturedData("Le Prototype","","../../../assets/images/portfolio/desktop/image-prototype.jpg","Le Prototype")
+      new HomeFeaturedData("Project Del Sol","","../../../assets/images/portfolio/desktop/image-del-sol.jpg","../../../assets/images/portfolio/tablet/image-del-sol.jpg","../../../assets/images/portfolio/mobile/image-del-sol.jpg","Project Del Sol"),
+      new HomeFeaturedData("228B Tower","","../../../assets/images/portfolio/desktop/image-228b.jpg","../../../assets/images/portfolio/tablet/image-228b.jpg","../../../assets/images/portfolio/mobile/image-228b.jpg","228B Tower"),
+      new HomeFeaturedData("Le Prototype","","../../../assets/images/portfolio/desktop/image-prototype.jpg","../../../assets/images/portfolio/tablet/image-prototype.jpg","../../../assets/images/portfolio/mobile/image-prototype.jpg","Le Prototype")
     ]
   }
 

@@ -3,7 +3,9 @@ export class HomeFeaturedData{
     constructor(
         public title: string,
         public text: string,
-        public src: string,
+        public srcD: string,
+        public srcT: string,
+        public srcM: string,
         public imgAlt: string
     ){}
 }
