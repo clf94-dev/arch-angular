@@ -4,27 +4,25 @@ $medium-grey: #7D828F;
 $light-grey: #C8CCD8;
 $very-light-grey: #EEEFF4;
 $red: #DF5656;
-
-
-
 //----------------------Home Intro section ---------------------
 .intro-cont {
     padding: 3% 7% 5% 10%;
     .text-col {
-        width:100%;
+        width: 100%;
         position: absolute;
         top: 28vw;
         @media screen and (max-width: 757px) {
-            top: 10%;
+            top: 20%;
         }
         left: 20%;
         padding-right: 70% !important;
         font-weight: normal;
         color: $very-light-grey;
         h1 {
-            @media screen and (max-width: 756px) {
-                font-size: 40px;
-                padding-top: 60% !important;
+            @media screen and (max-width: 900px) {
+                font-size: 50px;
+                padding-top: 70% !important;
+                margin-bottom: 3%;
             }
             @media screen and (max-width: 1080px) {
                 padding-top: 65% !important;
@@ -34,9 +32,10 @@ $red: #DF5656;
         p {
             @media screen and (max-width: 757px) {
                 font-size: 14px;
+                padding-right: 10%;
             }
             font-size: 15px;
-            padding-right: 20% !important;
+            padding-right: 20%;
             padding-bottom: 40px;
         }
         button {
@@ -45,6 +44,7 @@ $red: #DF5656;
             background-color: $black;
             color: white;
             cursor: pointer;
+            margin-top: 4%;
             align-items: center !important;
             border: 1px solid black;
             img {
@@ -59,11 +59,12 @@ $red: #DF5656;
             }
         }
     }
-   .img-col {
-       width:100%;
-       img {
+    .img-col {
         width: 100%;
-    }}
+        img {
+            width: 100%;
+        }
+    }
 }
 
 .btn-row {
@@ -71,11 +72,19 @@ $red: #DF5656;
     @media screen and(max-width: 756px) {
         top: 85% !important;
     }
+    @media screen and(max-width: 756px) {
+        top: 110% !important;
+        left: 100px;
+    }
+    @media screen and(max-width: 600px) {
+        top: 85% !important;
+        left: 100px;
+    }
     @media screen and(max-width: 1080px) {
         top: 120%;
     }
-    top: 59.66vw;
-    left: 137px;
+    top: 60.25vw;
+    left: 100px;
     .btn {
         background-color: white;
         border: 1px solid $dark-grey;

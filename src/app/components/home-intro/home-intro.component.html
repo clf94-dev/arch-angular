@@ -1,6 +1,6 @@
 <div class="intro-cont" fxLayout="row wrap">
     <div class='img-col' fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.lg="100%">
-        <img src="{{introdata[page].src}}" alt="{{introdata[page]}}">
+        <img src="{{introdata[page].srcD}}" srcset="{{introdata[page].srcD}} 1500w,{{introdata[page].srcT}} 900w, {{introdata[page].srcM}} 600w" alt="{{introdata[page]}}">
     </div>
     <div class="text-col" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="100%" fxFlex.lg="100%">
         <h1>{{introdata[page].title}}</h1>
